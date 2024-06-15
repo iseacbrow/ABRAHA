@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETH_EL_FABRICS</title>
+    <link rel="stylesheet" href="promo.css">
+    <link rel="stylesheet" href="Main.css">
+    <script src="https://kit.fontawesome.com/0f68490be8.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="/index.html">
+            <img src="images/WhatsApp_Image_2024-04-04_at_1.48.14_PM-removebg-preview.png" class="logo">
+        </a>
+            
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/House.html" class="active">About Us</a></li>
+            <li><a href="Outside.html">Products</a></li>
+            <li><a href="fabrics.html">Plain Fabrics</a></li>
+        </ul>
+        <a href="/Register.html">
+           <a href="/Register.html" class="register-btn">Register Now</a>
+        </a>
+        
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    
+    <section class="blog-content">
+
+
+        <div class="row">
+            <div class="blog-left">
+                 <img src="images/duke (2).jpg">
+                 <h2>Our Certificate $ Online Programs For 2023</h2>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Facilis inventore ex modi, necessitatibus esse enim
+                 placeat ipsam provident sed atque repellendus
+                 incidunt voluptate fuga sint quidem, velit obcaecati,
+                 reprehenderit voluptatem!</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                 Consequuntur, reprehenderit! Placeat, quidem odit. Sapiente 
+                 nemo aut vel molestias fugiat ea nesciunt dolore, libero 
+                 ipsa, praesentium explicabo. Molestias facere
+                 sint velit!</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Quidem vitae, tenetur magni dolor voluptas praesentium 
+                 nemo ratione, est mollitia laborum veniam blanditiis. 
+                 Ratione, suscipit nihil dolore sint possimus
+                 itaque error.</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Accusantium molestiae vero, ducimus ullam sapiente fuga?
+                 Repudiandae placeat optio architecto tempore porro blanditiis
+                 perferendis eius! Ratione inventore harum fugiat accusamus 
+                 repellat.</p>
+   
+   
+                 <div class="comment-box">
+   
+                   <h3>Leave a Comment</h3>
+   
+                   <form class="comment-form">
+                       <input type="text" placeholder="Enter Name">
+                       <input type="email" placeholder="Enter Email">
+                       <textarea rows="5" placeholder="Your Comment"></textarea>
+                       <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+   
+                   </form>
+                 </div>
+            </div>
+            <div class="blog-right">
+               <h3>Post Categories</h3>
+               <div>
+                   <span>Business Analytic</span>
+                   <span>21</span>
+               </div>
+               <div>
+                   <span>Data Science</span>
+                   <span>28</span>
+               </div>
+               <div>
+                   <span>Machine Learning</span>
+                   <span>15</span>
+               </div>
+               <div>
+                   <span>Computer Science</span>
+                   <span>34</span>
+               </div>
+               <div>
+                   <span>Auto CAD</span>
+                   <span>42</span>
+               </div>
+               <div>
+                   <span>Journalism</span>
+                   <span>22</span>
+               </div>
+               <div>
+                   <span>Commerce</span>
+                   <span>30</span>
+               </div>
+            </div>
+        </div>
+   </section>
+
+
+
+     
+ <!---------- footer-------->
+ <div class="footer">
+    <div class="container2">
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download App for Android Mobile Phone</p>
+               <div class="app-logo">
+                   <img src="images/play store.png">
+                   <img src="images/App store.png">
+               </div>
+           </div>
+           <div class="footer-col-2">
+               <img src="images/WhatsApp_Image_2024-04-04_at_1.48.14_PM-removebg-preview.png">
+               <p>Our Purpose Is To Sustainably Make the Pleasure and 
+               Benefit of Sports Accessible to the many. </p>
+           </div>
+           <div class="footer-col-3">
+           <h3>Useful Links</h3>
+           <ul>
+               <li>Coupons</li>
+               <li>Blog Post</li>
+               <li>Return policy</li>
+               <li>Join Affiliate</li>
+           </ul>
+    </div>
+    <div class="footer-col-4">
+       <h3>Follow us</h3>
+       <ul>
+           <li>Facebook</li>
+           <li>Twitter</li>
+           <li>Instagram</li>
+           <li>YouTube</li>
+       </ul>
+  </div>
+</div>
+<hr>
+<p class="Fashion">2024 Bridal Fabrics. All Rights Reserved Beth-el-fabrics</p>
+</div>
+</div>
+<!----------js for toggle menu--------->
+     <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+     </script>
+<!----------js for toggle Form--------->
+
+     <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+            function login(){
+
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+
+     </script>
+</body>
+</html>

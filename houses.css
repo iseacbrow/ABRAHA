@@ -1,0 +1,53 @@
+.swiper-wrapper{
+    display: flex;
+    width: 200rem;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.slide-conc{
+    overflow-x: auto;
+    margin-top: 80px;
+    
+}
+
+.slide-conc::-webkit-scrollbar{
+    width: 0;
+}
+
+/* ===========MEDIA SCREEN ============= */
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+   body{
+    width: 100%;
+    gap: 10px;
+   }
+    .navbar-white{
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden !important;
+   }
+    .colo{
+        margin-top: 130px;
+        max-width: 100%;
+        width: 100%;
+        margin-right: unset;
+    }
+    .col-21 img{
+        background-color: red;
+        width: 500px;
+    }
+
+    .row{
+        gap: 1px;
+        padding-inline: 10px;
+        margin-top: 20px;
+    }
+    .campus-col img{
+        width: 130px;
+    }
+
+    .about-msg p{
+        font-size: 12px;
+    }
+}

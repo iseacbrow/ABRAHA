@@ -1,0 +1,453 @@
+/* ------------------------- FAQs
+---------------------------- */
+.faqs {
+    background: white;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.faqs h2{
+    text-align: center;
+}
+
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #765A48;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+    color: #fff;
+}
+
+
+.faq_icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+    color: #fff;
+}
+
+.faq.open p {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+
+.contact_container {
+    background-color: #FFF66C;
+    padding: 9rem;
+    display: grid;
+    grid-template-columns: 50% 60%;
+    gap: 4rem;
+    height: 47rem;
+    border-radius: 1rem;
+}
+
+.let{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*----------------- ASIDE ----------------- */
+.contact_aside {
+    background: #765A48;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    margin-top: 5rem;
+}
+.aside_image {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contact_aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact_aside p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.contact_details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact_socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+
+.contact_socials a {
+    background:  #FFF66C;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact_socials a:hover {
+    background: transparent;
+}
+
+
+/*----------------- FORM ----------------- */
+.contact_form {
+     display: flex;
+     flex-direction: column;
+     gap: 1.2rem;
+     margin-right: 4rem;
+}
+
+.form_name {
+    display: flex;
+    gap: 1.2rem;   
+    color: #fff;
+}
+
+.form_name input{
+    color: #fff;
+}
+
+
+.contact_form input[type="text"] {
+    width: 50%;
+}
+
+input, textarea {
+     width: 100%;
+     padding: 1rem;
+     background:  #765A48;
+     text-decoration-color: #fff;
+}
+.form_name, textarea[type="text"]{
+    color: #fff;
+}
+
+.contact_form .btn {
+    width: max-content;
+    margin-top: -4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*===================== MEDIA SCREEN SIZE =============================*/
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+ 
+    
+
+.contact_container {
+    background: #765A48;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: unset;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.contact_aside {
+    background: #765A48;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 13rem;
+    margin-top: 5rem;
+    width: 90%;
+}
+
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: unset;
+    width: 80%;
+}
+
+.form_name {
+   display: flex;
+   gap: 1.2rem;   
+   color: #fff;
+}
+
+.form_name input{
+   color: #fff;
+}
+
+
+.contact_form input[type="text"] {
+   width: 50%;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 499px) {
+    
+
+    .faqs {
+        padding-top: 35px;
+        margin: unset;
+        padding-bottom: 30px;
+        margin: 0;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        overflow-x: hidden;
+
+    }
+    
+    .faqs_container {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: unset;
+        margin: 0;
+        padding: unset;
+        padding-inline: 3px;
+    }
+    
+    .faq {
+        padding: unset;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: fit-content;
+        background: purple;
+        cursor: pointer;
+        width: 100%;
+    }
+    .faq h4{
+        font-size: 10px;
+        font-weight: bolder;
+        padding: unset;
+        margin: unset;
+    }
+    .faq p{
+        font-size: 10px;
+        width: 100%;
+        margin: unset;
+        padding: unset;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contact_container {
+        background: #420cd4;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        height: unset;
+        border-radius: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 39px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .contact_aside {
+        background: #cc5b15;
+        padding: 1rem;
+        border-radius: 1rem;
+        position: relative;
+        bottom: 10rem;
+        margin-top: 5rem;
+        width: 90%;
+    }
+
+    .contact_aside p{
+        font-size: 80%;
+        line-height: 20px;
+    }
+    
+    
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: unset;
+        width: 95%;
+    }
+    
+    .form_name {
+       display: flex;
+       gap: 1rem;   
+       color: #fff;
+    }
+    
+    .form_name input{
+       color: #fff;
+    }
+    
+    
+    .contact_form input[type="text"] {
+       width: 50%;
+    }
+    .footer{
+        background-color: red;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .let{
+        width: 90%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .let h2{
+        text-align: center;
+        padding-inline: 6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+
+    #navBar{
+        width: 100%;
+        gap: 3px;
+        background-color: black;
+    }
+
+    .register-btn{
+        max-width: 400px !important;
+        width: 1000px !important;
+        padding: unset;
+        margin: unset;
+        font-size: 10px !important;
+    }
+
+
+    #display-menu{
+        top: 20px;
+        right: 50px;
+        font-size: 35px;
+    }
+    nav .nav-links{
+        position: fixed;
+        margin: 10px 0;
+        display: block;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        width: 200px;
+        z-index: 1;
+        text-align: left;
+        top: 80px;
+        /* right: 0; */
+        right: -200px;
+        transition: 1s;
+    }
+    .faqs {
+        padding-top: 35px;
+        margin: unset;
+        padding-bottom: 30px;
+        margin: 0;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        width: 100% !important;
+        overflow-x: hidden;
+
+    }
+    
+    .faqs_container {
+        padding-top: 35px;
+        margin-left: unset;
+        display: flex;
+        flex-direction: column;
+        margin: unset;
+        margin: 0;
+        padding: unset;
+        padding-inline: 3px;
+        position: relative;
+        left: -28px;
+    }
+    
+    .faq {
+        padding: unset;
+        display: flex;
+        align-items: center;
+        gap: 0.1rem;
+        height: fit-content;
+        background: purple;
+        cursor: pointer;
+        width: 300px !important;
+        
+        position: relative;
+        left: -22px;
+    }
+    .faq h4{
+        font-size: 10px;
+        font-weight: bolder;
+        padding: unset;
+        margin: unset;
+    }
+    .faq p{
+        font-size: 10px;
+        width: 100%;
+        margin: unset;
+        padding: unset;
+    }
+
+    .emal{
+        font-size: 11px;
+    }
+    
+}

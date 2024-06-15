@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETH_EL_FABRICS</title>
+    <link rel="stylesheet" href="Main.css">
+    <script src="https://kit.fontawesome.com/0f68490be8.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="/index.html">
+            <img src="images/WhatsApp_Image_2024-04-04_at_1.48.14_PM-removebg-preview.png" class="logo">
+        </a>
+            
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/House.html" class="active">About Us</a></li>
+            <li><a href="Outside.html">Products</a></li>
+            <li><a href="fabrics.html">Plain Fabrics</a></li>
+        </ul>
+        <a href="/Register.html">
+           <a href="/Register.html" class="register-btn">Register Now</a>
+        </a>
+        
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    
+        <div class="house-title">
+            <h1>BETH_EL_FABRICS</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div>
+                    <p>Address: Shop A2011 Main Tejuosho
+                Shopping Complex Yaba, Lagos, Nigeria.</p>
+                </div>
+            </div>
+        </div>
+
+ <!----------- account-page----------->
+
+ <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/green2.jpg" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Phone Number">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+     
+ <!---------- footer-------->
+ <div class="footer">
+    <div class="container2">
+       <div class="row">
+           <div class="footer-col-1">
+               <h3>Download Our App</h3>
+               <p>Download App for Android Mobile Phone</p>
+               <div class="app-logo">
+                   <img src="images/play store.png">
+                   <img src="images/App store.png">
+               </div>
+           </div>
+           <div class="footer-col-2">
+               <img src="images/WhatsApp_Image_2024-04-04_at_1.48.14_PM-removebg-preview.png">
+               <p>Our Purpose Is To Sustainably Make the Pleasure and 
+               Benefit of Sports Accessible to the many. </p>
+           </div>
+           <div class="footer-col-3">
+           <h3>Useful Links</h3>
+           <ul>
+               <li>Coupons</li>
+               <li>Blog Post</li>
+               <li>Return policy</li>
+               <li>Join Affiliate</li>
+           </ul>
+    </div>
+    <div class="footer-col-4">
+       <h3>Follow us</h3>
+       <ul>
+           <li>Facebook</li>
+           <li>Twitter</li>
+           <li>Instagram</li>
+           <li>YouTube</li>
+       </ul>
+  </div>
+</div>
+<hr>
+<p class="Fashion">2024 Bridal Fabrics. All Rights Reserved Beth-el-fabrics</p>
+</div>
+</div>
+<!----------js for toggle menu--------->
+<script>
+    var navBar = document.getElementById("navBar");
+    function togglebtn(){
+        navBar .classList.toggle("hidemenu"); 
+    }
+ </script>
+<!----------js for toggle Form--------->
+
+     <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register(){
+
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+            function login(){
+
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+
+     </script>
+</body>
+</html>

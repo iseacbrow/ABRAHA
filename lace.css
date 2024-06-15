@@ -1,0 +1,125 @@
+#search-mane{
+    padding-left: 50px;
+    margin-block: 40px;
+    display: block;
+    align-items: center;
+}
+#search-mane h1{
+    font-size: 40px;
+}
+#ser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+#search-mane input{
+    width: 420px;
+    font-size: 25px;
+    padding: 10px 5px;
+    border: none;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#search-mane button{
+    height: 50px;
+    background-color: #ffd000;
+    border: none;
+    border-top-right-radius: 10px;
+}
+#search-mane button a{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+}
+#group{
+    display: flex;
+    margin-top: 50px;
+    gap: 80px;
+}
+#group .img img{
+    width: 410px;
+}
+#benefit h2{
+    font-size: 20px;
+}
+#span{
+    color: blue;
+}
+#lists h2{
+    font-size: 10px;
+}
+#lists p{
+    font-size: 15px;
+}
+#lists{
+    padding-top: 13px;
+}
+
+
+
+
+/* Start Media Query */
+@media (max-width:890px){
+
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+
+@media(max-width:750px){
+
+
+    
+}
+    #hero {
+        
+        height: 90vh;
+        padding: 0px 80px; 
+    }
+    /* Blog page */
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #blog .blog-img{
+        width: 20%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
